@@ -2,33 +2,27 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the BasicInfoPage page.
+ * Generated class for the AddAddressPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-  name:"BasicInfo",
-  segment:'basic-info',
-  defaultHistory:['ProfileHome']
+  name:"AddAddress",
+  segment:"add-address",defaultHistory:['BasicInfo']
 })
 @Component({
-  selector: 'page-basic-info',
-  templateUrl: 'basic-info.html',
+  selector: 'page-add-address',
+  templateUrl: 'add-address.html',
 })
-export class BasicInfoPage {
+export class AddAddressPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BasicInfoPage');
+    console.log('ionViewDidLoad AddAddressPage');
   }
-
-
-  itemSelected(item) {
-    this.navCtrl.push('AddAddress');
-  }  
 
 }

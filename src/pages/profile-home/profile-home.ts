@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage({
   name:"ProfileHome",
-  segment:"profile-home"
+  segment:"profile-home",defaultHistory:['HomePage']
 })
 @Component({
   selector: 'page-profile-home',
